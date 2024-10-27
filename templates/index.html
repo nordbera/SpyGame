@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Spy Oyunu</title>
+</head>
+<body>
+    <h1>Spy Oyunu</h1>
+    <form action="/oyun" method="post">
+        <label for="kisisayisi">Kaç kişi oynuyor?</label>
+        <input type="number" name="kisisayisi" required><br>
+
+        <label for="konuSecim">Hangi konuda oynuyorsunuz?</label>
+        <select name="konuSecim" required>
+            <option value="1">Şehirler</option>
+            <option value="2">Konumlar</option>
+            <option value="3">Meslekler</option>
+            <option value="4">Ünlüler</option>
+        </select><br>
+
+        <label for="spySayisi">Kaç Spy olsun?</label>
+        <input type="number" name="spySayisi" required><br>
+
+        <button type="submit">Oyunu Başlat</button>
+    </form>
+</body>
+</html>
